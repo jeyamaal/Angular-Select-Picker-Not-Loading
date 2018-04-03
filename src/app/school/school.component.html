@@ -1,0 +1,26 @@
+<p>
+  school works!
+</p>
+<select class="selectpicker">
+  <option>Mustard</option>
+  <option>Ketchup</option>
+  <option>Relish</option>
+</select>
+
+<form action="">
+   <input type="text" class="form-control" placeholder="School">
+
+   <!-- <ng-container *ngFor="let user of data">
+    <p>{{user.name}}</p>
+    <p>{{user.username}} </p>
+  </ng-container>  -->
+ <br><br>
+  <select multiple>
+      <option  *ngFor="let user of data" value="user.name"> {{user.username}} </option>
+  </select> 
+
+  <br><br>
+  <select multiple class="selectpicker">
+      <option  *ngFor="let user of data" value="user.name"> {{user.username}} </option>
+  </select>
+</form>
